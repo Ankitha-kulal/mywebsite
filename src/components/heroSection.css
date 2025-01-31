@@ -1,0 +1,52 @@
+.hero-section img {
+  width: 100%; /* Make the image take full width */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Prevent overflow */
+}
+
+.company-logo {
+  width: 60px; /* Adjust to the desired size */
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .company-logo {
+    width: 80px; /* Adjust for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .company-logo {
+    width: 60px; /* Adjust for very small screens */
+  }
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.responsive-image {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  border-radius: 40px; /* Curved edges */
+  object-fit: contain;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .responsive-image {
+    max-width: 80%;
+    border-radius: 30px; /* Slightly smaller curve on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive-image {
+    max-width: 70%;
+    border-radius: 20px; /* Even smaller curve for mobile */
+  }
+}
+
